@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<script>
+		var a=prompt("enter the name");
+				b=0; vowels="aeiou"
+			for (i=0;i<a.length;i++){
+				for (j=0; j<=vowels.length;j++){
+					if (a[i]==vowels[j]){
+						b++;
+					}
+				}
+			}
+			if(b){
+				console.log("string has"+b+ " vowles");
+			}
+			else{
+				console.log("string has no vowels");
+			}
+	</script>
+	
+	
+	
+</body>
+</html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,24 +7,71 @@
     <title>Document</title>
 </head>
 <body>
+		
 	<script>
-		var a=prompt("enter the name");
-				b=0; vowels="aeiou"
-			for (i=0;i<a.length;i++){
-				for (j=0; j<=vowels.length;j++){
-					if (a[i]==vowels[j]){
-						b++;
-					}
-				}
-			}
-			if(b){
-				console.log("string has"+b+ " vowles");
-			}
-			else{
-				console.log("string has no vowels");
-			}
-	</script>
+		
+		
 	
+		var name="aruna ";
+        var a=fun(name);
+
+            function fun(name){
+            let b=[];
+
+            for(i=0;i<name.length;i++){
+                if(name[i]!="a" && name[i]!="e" && name[i]!="i" && name[i]!="o" && name[i]!="u"){
+                    b++
+                }
+            }
+            return b
+        }
+        console.log(a);
+		
+		
+		var number=3,
+		number1="";
+			for (i=1; i<=number; i++){
+				for(j=1; j<=number-i; j++){
+					number1+=" ";
+				}
+				for (k=0; k<2*i-1; k++){
+					number1+="*"
+				}
+				number1+="\n";
+			}
+			console.log(number1);
+	
+	
+	
+	<!-- function removeSpecials(str) { -->
+	<!-- var a=pro -->
+    <!-- var lower = str.toLowerCase(); -->
+    <!-- var upper = str.toUpperCase(); -->
+
+    <!-- var res = ""; -->
+    <!-- for(var i=0; i<lower.length; ++i) { -->
+        <!-- if(lower[i] != upper[i] || lower[i].trim() === '') -->
+            <!-- res += str[i]; -->
+    <!-- } -->
+    <!-- return res; -->
+<!-- } -->
+<!-- console.log(res) -->
+
+ 
+<!-- const x="* hellow"; -->
+<!-- const y=x.replaceAll("[^a-zA-Z0-9]", ""); -->
+<!-- console.log(y); -->
+
+
+var k = '# aruna ';
+
+      var l = k.replace(/[^a-zA-Z ]/g, '');
+
+      console.log(l);
+	</script>
+
+
+
 	
 	
 </body>
